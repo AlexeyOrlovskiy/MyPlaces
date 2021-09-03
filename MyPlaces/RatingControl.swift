@@ -2,9 +2,6 @@
 //  RatingControl.swift
 //  MyPlaces
 //
-//  Created by Alexey Efimov on 29/01/2019.
-//  Copyright © 2019 Alexey Efimov. All rights reserved.
-//
 
 import UIKit
 
@@ -47,6 +44,7 @@ import UIKit
     // MARK: Button Action
     
     @objc func ratingButtonTapped(button: UIButton) {
+        
         guard let index = ratingButtons.firstIndex(of: button) else { return }
         
         let selectedRating = index + 1
@@ -84,8 +82,6 @@ import UIKit
                                       in: bundle,
                                       compatibleWith: self.traitCollection)
         
-        
-        
         for _ in 0..<starCount {
             
             // Create the button
@@ -116,6 +112,7 @@ import UIKit
     }
     
     private func updateButtonSelectionState() {
+        
         for (index, button) in ratingButtons.enumerated() {
             button.isSelected = index < rating
         }
