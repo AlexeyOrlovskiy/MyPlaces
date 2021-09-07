@@ -2,9 +2,6 @@
 //  mapManager.swift
 //  MyPlaces
 //
-//  Created by Алексей Орловский on 03.09.2021.
-//  Copyright © 2021 Alexey Efimov. All rights reserved.
-//
 
 import UIKit
 import MapKit
